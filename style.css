@@ -24,10 +24,10 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-	background-image: url(img/langyP.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	animation-name: example;
+    background-image: url(img/langyP.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: example;
     animation-duration: 14s;
     animation-iteration-count: infinite;
 }
