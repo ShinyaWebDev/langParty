@@ -105,8 +105,8 @@ var Snowflake = (function() {
 
 }());
 
-window.onload = function() {
-  setTimeout(function() {
-  	Snowflake.init(document.getElementById('snow'));
-  }, 500);
-}
+window.addEventListener('load', function() {
+	setTimeout(function() {
+		Snowflake.init(document.getElementById('snow'));
+	}, 500);
+  })
