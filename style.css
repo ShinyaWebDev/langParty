@@ -32,7 +32,7 @@ body {
     animation-iteration-count: infinite;
 }
 
-@keyframes example{
+/* @keyframes example{
     0%{
       background-image: url(img/langyFront.jpeg);
     }
@@ -48,7 +48,7 @@ body {
     100%{
       background-image: url(img/langyFront.jpeg);
     }
- }
+ } */
 
 ::-webkit-scrollbar { 
     display: none; 
