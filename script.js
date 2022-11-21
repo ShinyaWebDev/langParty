@@ -79,34 +79,35 @@ var Snowflake = (function() {
 			container.appendChild(flake.div);
 			flakes.push(flake);
 		}
-    
-    container.onmousemove = function(event) {
-	  	mouseX = event.clientX;
-  		mouseY = event.clientY;
-  		wind = (mouseX - window.innerWidth / 2) / window.innerWidth * 6;
-  	};
+	
+	container.onmousemove = function(event) {
+		  mouseX = event.clientX;
+		  mouseY = event.clientY;
+		  wind = (mouseX - window.innerWidth / 2) / window.innerWidth * 6;
+	  };
 
 	  container.ontouchstart = function(event) {
 		  mouseX = event.targetTouches[0].clientX;
 		  mouseY = event.targetTouches[0].clientY;
 		  event.preventDefault();
-  	};
+	  };
 
-  	window.ondeviceorientation = function(event) {
-	  	if (event) {
-		  	wind = event.gamma / 10;
-  		}
-  	};
-    
-  	update();
+	  window.ondeviceorientation = function(event) {
+		  if (event) {
+			  wind = event.gamma / 10;
+		  }
+	  };
+	
+	  update();
 	};
 
 	return Snowflake;
 
 }());
 
-window.onload = function() {
-  setTimeout(function() {
-  	Snowflake.init(document.getElementById('snow'));
-  }, 500);
-}
+Snowflake.init(document.getElementById('snow'))
+window.addEventListener('load', function() {
+
+})
+
+
