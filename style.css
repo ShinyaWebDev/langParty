@@ -72,7 +72,7 @@ h1 {
 	text-shadow: #FC0 1px 0 10px;
 }
 
-h2 {
+h2, h3 {
 	position: absolute;
 	bottom: 8vh;
 	font-size: 7vw;
@@ -236,3 +236,14 @@ h2 {
     font-size: 13vw;
 }
 
+input{
+  display:none;
+}
+
+.count{
+  color: #f7f7f7;
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 1em;
+  font-family: 'Mouse Memoirs', sans-serif;
+}
